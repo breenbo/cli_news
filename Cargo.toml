@@ -1,0 +1,10 @@
+workspace = { members = ["newsapi"] }
+[package]
+name = "clinews"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dotenv = "0.15.0"
+newsapi = { path = "./newsapi", features = ["async"] }
+tokio = { version = "1.35.1", features = ["full"] }
